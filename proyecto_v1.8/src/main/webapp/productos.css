@@ -1,0 +1,126 @@
+/* Estilos específicos para productos.jsp, extendiendo estilos.css */
+body {
+    font-family: 'Orbitron', sans-serif;
+    background: #000000; /* Fondo negro */
+    color: #ffffff; /* Texto blanco */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    padding-top: 70px; /* Espacio para el header fijo */
+}
+
+.container {
+    padding: 2rem;
+    width: 100%;
+    /* Eliminamos max-width: 800px para que max-w-7xl de Tailwind funcione */
+}
+
+.card {
+    background: rgba(128, 0, 128, 0.3); /* Morado translúcido */
+    backdrop-filter: blur(10px);
+    border-radius: 1rem;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 0 15px rgba(128, 0, 128, 0.7); /* Brillo morado */
+}
+
+.card h2, .card h3, .card label {
+    color: #ffffff; /* Texto blanco dentro de las cajas */
+}
+
+.btn {
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    background-color: #1E90FF; /* Azul más oscuro al pasar el ratón */
+}
+
+select, input[type="submit"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #ffffff; /* Fondo blanco para el combobox */
+    color: #000000; /* Texto negro en el combobox */
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+select option {
+    background-color: #ffffff; /* Fondo blanco para las opciones */
+    color: #000000; /* Texto negro en las opciones */
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 8px 12px;
+    text-align: left;
+    border-bottom: 1px solid #ffffff;
+}
+
+th {
+    font-weight: 600;
+    background-color: #800080; /* Encabezado morado */
+}
+
+tbody tr:hover {
+    background-color: rgba(128, 0, 128, 0.2); /* Efecto hover morado suave */
+}
+
+/* Estilos para el header y la barra de navegación */
+header {
+    width: 100%;
+    background-color: #1a1a1a; /* Fondo oscuro que combina con el negro de la página */
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(128, 0, 128, 0.3); /* Sombra morada suave */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    max-height: 60px; /* Aumentado a 60px para un logo más grande */
+    width: auto; /* Mantener proporciones */
+    display: block;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    gap: 30px; /* Espacio uniforme entre los enlaces */
+}
+
+.nav-container a {
+    color: #ffffff; /* Blanco para que combine con el texto de la página */
+    text-decoration: none;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 20px; /* Aumentado a 16px para texto más grande */
+    font-weight: 600;
+    padding: 5px 10px;
+    transition: color 0.3s, transform 0.2s;
+}
+
+.nav-container a:hover {
+    color: #800080; /* Morado para el hover, combinando con el tema */
+    transform: scale(1.05); /* Efecto suave al pasar el ratón */
+}
+
+.card form {
+    align-items: flex-start !important;
+}

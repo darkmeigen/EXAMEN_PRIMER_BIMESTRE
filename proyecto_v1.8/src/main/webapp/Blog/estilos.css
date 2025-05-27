@@ -1,0 +1,265 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #59e2ed;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+/* Estilo para las imágenes principales */
+.img-principal {
+    width: 100%;
+    height: auto;
+}
+
+/* Cajas de contenido */
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 1.8em;
+    color: #333;
+}
+
+/* Estilos para las imágenes con nombre */
+.imagenes {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.imagen-box {
+    width: 30%;
+    text-align: center;
+    padding: 10px;
+    background-color: #e0f7fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.img-box {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Botón */
+.boton-formulario {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.boton-formulario button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.boton-formulario button:hover {
+    background-color: #45a049;
+}
+
+/* Video */
+.video {
+    text-align: center;
+}
+
+video {
+    width: 80%;
+    border-radius: 8px;
+}
+
+/* Estilos de la caja de saludo */
+.saludo {
+    background-color: #00b2ff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para la sección del mapa */
+.mapa {
+    margin: 20px;
+    padding: 20px;
+    background-color: #e8f5e9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.mapa h2 {
+    font-size: 1.8em;
+    color: #2e7d32;
+    margin-bottom: 20px;
+}
+
+.mapa-contenedor {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%; /* Relación 16:9 */
+    border-radius: 8px;
+}
+
+.mapa-contenedor iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 8px;
+}
+/* Estilo para el nuevo botón de experiencia */
+.boton-experiencia {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.boton-experiencia button {
+    padding: 12px 25px;
+    font-size: 1.2em;
+    background-color: #2196f3;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.boton-experiencia button:hover {
+    background-color: #1976d2;
+    transform: scale(1.05);
+}
+
+/* Estilos para la tabla */
+.tabla-info table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.tabla-info th, .tabla-info td {
+    padding: 12px 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.tabla-info th {
+    background-color: #4caf50;
+    color: white;
+    font-size: 1em;
+}
+
+.tabla-info td {
+    font-size: 0.95em;
+    color: #333;
+}
+
+/* Estilos para la lista numerada */
+.lista-actividades ol {
+    padding-left: 20px;
+    font-size: 1em;
+    color: #333;
+}
+
+.lista-actividades li {
+    margin-bottom: 8px;
+}
+ /* Desplazamiento suave para anclas */
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Navegación */
+        nav {
+            background-color: #4caf50;
+            padding: 10px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+/* Control de música */
+.control-musica {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(76, 175, 80, 0.9); /* Color verde con transparencia */
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    text-align: center;
+    z-index: 1000;
+    width: 200px;
+}
+
+.control-musica h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.control-musica button {
+    background-color: white;
+    color: #4caf50;
+    border: none;
+    padding: 8px 12px;
+    margin: 5px 0;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.control-musica button:hover {
+    background-color: #e0e0e0;
+}
+
+.control-musica label {
+    color: white;
+    font-size: 0.9em;
+}
+
+#volumeControl {
+    width: 100%;
+    margin-top: 5px;
+}
+
